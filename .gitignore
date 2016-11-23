@@ -4,4 +4,5 @@ vendor
 .settings/*
 .buildpath
 composer.lock
-data/
+data/*
+!data/.gitkeep
