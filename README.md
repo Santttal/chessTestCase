@@ -2,10 +2,9 @@
 
 ## Description 
 
-Существует шахматная доска опредленного размера. На эту доску можно добавлять различные фигуры (пешки/ферзи/короли). После добавления фигуры можно перемещать или удалять. В любой момент времени состояние доски можно сохранить в хранилище (или загрузить из него): в файл или в redis. 
+You have a chessboard with an input size. You can place, move and remove different chessmen (pawns, queens, kings, etc) on board. There should be opportunity to save/upload board state in storage(Redis or file) in any moment.
 
-Необходимо реализовать описанную выше функциональность. При реализации учтите, что фигур может быть больше, чем три вида; виды хранилищ могут меняться. Добавьте возможность вызова пользовательского кода в момент, когда на доску добавляется фигура определенного типа/фигура любого типа (например, выводить текстовое сообщение при добавлении пешки / при добавлении любой фигуры).
-
+You have to implement this functionality. N.b. there can be more types of chessman than three; also types of storages can be changed. When user place a chessman on the board, there should be an ability to execute custom code (for example, output a message while pawn is added/any kind of chessman is added).
 ## Requirements
 
 php redis extension [phpredis](https://github.com/phpredis/phpredis) 
